@@ -1,0 +1,21 @@
+@require 'nib';
+global-reset();
+
+// load in project varibles
+@require 'config';
+
+//grab some helpers
+@require 'helpers/mediaqueries';
+@require 'helpers/mixins';
+@require 'helpers/extenders';
+
+
+* { box-sizing: border-box; }
+
+#app {
+	border:2px solid positive;
+	padding:10%;
+	@media minTablet {
+		border:none;
+	}
+}

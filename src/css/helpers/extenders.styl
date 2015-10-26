@@ -1,0 +1,70 @@
+@require '../config';
+@require 'mixins';
+
+//
+// EXTENDER OBJECTS
+//
+
+$clearfix {
+  zoom:1;
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+$ib {
+  display:inline-block;
+  vertical-align:top;
+  white-space: normal;
+
+  *display:inline;
+  zoom:1;
+}
+
+$ir {
+  text-indent: 120%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+$wrapper {
+  width:100%;
+  @extends $clearfix;
+}
+
+$content {
+  padding: 0 20px;
+  @extends $clearfix;
+  min-width:320px;
+  max-width:1210px;
+
+  @media minTablet {
+    margin: 0 auto;
+  }
+
+}
+
+$button {
+  @extends $ib;
+  text-align:center;
+  font-size:17px;
+  line-height:20px;
+  padding:8px;
+  border-radius: 3px;
+
+  color:#fff;
+  background:#666;
+  text-decoration:none;
+  transition:background-color 150ms ease-in;
+
+  &:hover,
+  &:focus {
+    background:#333;
+  }
+}
