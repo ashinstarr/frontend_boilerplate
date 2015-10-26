@@ -1,6 +1,8 @@
 var should = require('chai').should(),
     _ = require('lodash');
 
+/* Chai example
+
 describe('Test Module', function () {
 
 	var Globalvars;
@@ -17,3 +19,5 @@ describe('Test Module', function () {
     });
 
 });
+
+*/

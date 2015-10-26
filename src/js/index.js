@@ -45,9 +45,36 @@ var _ = require('lodash');
 
 	// render it out
 	React.render(<App />, document.querySelector('#app'));
-
 */
 
 /* Angular workflow
 
+	var angular = require('angular');
+	
+	// require subcomponents then feed them in
+	angular.module('todoApp', [])
+		.controller('todoCntl', function($scope, $locale) {
+		  	
+		  	var ctrl = this;
+
+			ctrl.items = [
+				{
+					name:'hello'
+				},
+				{
+					name: 'howdy'
+				}
+			];
+
+			ctrl.addNewItem = function(name){
+				if(name){
+					ctrl.items.push({
+						name:name
+					})
+				}
+			}
+
+			ctrl.newItem = '';
+
+		});
 */

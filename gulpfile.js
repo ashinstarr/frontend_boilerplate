@@ -1,7 +1,7 @@
 var gulp = require('gulp'),
 	rename = require('gulp-rename'),
 	browserify = require('gulp-browserify'),
-	reactify = require('reactify'),
+	//reactify = require('reactify'),
 	browserSync = require('browser-sync').create(),
 	sourceMaps = require('gulp-sourcemaps'),
 	stylus = require('gulp-stylus'),

@@ -5,7 +5,24 @@
 </head>
 <body>
 	<h1>dev</h1>
-	<div id="app"></div>
+	
+<!-- Angular example
+	
+	<div ng-app="todoApp">
+		<div id="app" ng-controller="todoCntl as todo">
+			<ul>
+				<li ng-repeat="todoItem in todo.items">
+					<pre>{{ todoItem | json }}</pre>
+				</li>
+			</ul>
+			<input ng-model="todo.newItem" placeholder="new item name" type="text" title="new item name" />
+			<button ng-click="todo.addNewItem(todo.newItem)" ng-disabled="!todo.newItem.length">Add</button>
+
+		</div>
+	</div>
+
+-->
+
 	<script src="/js/bundle.js"></script>
 	<link rel="stylesheet" type="text/css" href="/css/bundle.css">
 </body>
